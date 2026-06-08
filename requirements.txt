@@ -1,36 +1,4 @@
-# 📖 영어 암기 스튜디오
-
-고등학생을 위한 영어 단어 & 지문 암기 Streamlit 앱
-
-## 기능
-- 🃏 플래시카드 (단어 앞/뒤 뒤집기)
-- ✏️ 빈칸 4지선다 퀴즈
-- 📤 CSV/Excel 업로드로 단어 등록
-- 📌 범위별 필터 (수능/내신/모의고사)
-- 📊 학습 현황 통계
-
-## 로컬 실행
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-## Streamlit Cloud 배포 방법
-
-1. GitHub에 이 폴더를 레포로 업로드
-2. https://share.streamlit.io 접속
-3. "New app" → GitHub 레포 선택
-4. Main file: `app.py`
-5. Deploy!
-
-## CSV 형식 (단어)
-```
-word,meaning,example,category
-ambiguous,모호한,The text was ambiguous.,수능
-```
-
-## CSV 형식 (지문)
-```
-title,category,text,blank_word,hint
-2024수능18번,수능,The key is _____(perseverance).,perseverance,인내
-```
+streamlit>=1.32.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+pypdf>=4.0.0
